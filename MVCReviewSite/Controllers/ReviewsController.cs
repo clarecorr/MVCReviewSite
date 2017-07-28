@@ -48,7 +48,7 @@ namespace MVCReviewSite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ReviewID,Title,Content,Date,WouldRecommend,CategoryID")] Review review)
+        public ActionResult Create([Bind(Include = "ReviewID,Title,ReviewerName,Content,Date,WouldRecommend,CategoryID")] Review review)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace MVCReviewSite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ReviewID,Title,Content,Date,WouldRecommend,CategoryID")] Review review)
+        public ActionResult Edit([Bind(Include = "ReviewID,Title,ReviewerName,Content,Date,WouldRecommend,CategoryID")] Review review)
         {
             if (ModelState.IsValid)
             {

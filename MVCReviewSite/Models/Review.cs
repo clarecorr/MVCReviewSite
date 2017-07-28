@@ -12,7 +12,9 @@ namespace MVCReviewSite.Models
         [Key] //Primary Key
         public int ReviewID { get; set; }
         public string Title { get; set; }
+        public string ReviewerName { get; set; }
         public string Content { get; set; }
+        [DataType(DataType.Date)] 
         public DateTime Date { get; set; }
         public bool WouldRecommend { get; set; }
 
