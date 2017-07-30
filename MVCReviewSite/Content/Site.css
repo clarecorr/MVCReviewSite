@@ -3,6 +3,7 @@
     padding-bottom: 20px;
     background-image: url('images/cle3.jpg'); /*added background image for all pages*/
     background-size: cover;
+    color: #514E4E;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -28,7 +29,7 @@ textarea {
 
 /*Styling for reviews on review index*/
 .summary {
-    border: 2px solid black;
+    border: 2px solid #514E4E;
     margin: 0px auto;
     background-color: white;
     padding: 0px;
@@ -42,8 +43,14 @@ textarea {
 }
 
 a.btn.btn-primary {
-    background-color: #514E4E;
+    background-color: white;
+    margin: 0px;
+    border-color: white;
     margin-top: 20px;
+    opacity: .75;
+    color: #514E4E;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 

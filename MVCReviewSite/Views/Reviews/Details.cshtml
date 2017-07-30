@@ -4,61 +4,26 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>@Html.DisplayFor(model => model.Title) Review</h2>
 
 <div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal summary">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
+    <h4>Written by: @Html.DisplayFor(model => model.ReviewerName)</h4>
+    <h4>Date: @Html.DisplayFor(model => model.Date)</h4>
+    <dt>
+        @Html.DisplayNameFor(model => model.WouldRecommend)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
+    <dd>
+        @Html.DisplayFor(model => model.WouldRecommend)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewerName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ReviewerName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
-
-        <dd>
+    <div class="row">
+        <p style="color:white">
             @Html.DisplayFor(model => model.Content)
-        </dd>
+        </p>
+        
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Date)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.WouldRecommend)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.WouldRecommend)
-        </dd>
-
-    </dl>
+    </div>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
