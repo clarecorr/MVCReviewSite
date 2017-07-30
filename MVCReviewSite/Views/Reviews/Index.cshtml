@@ -13,20 +13,36 @@
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="col-md-3">
-            <h3>
-                @Html.DisplayFor(modelItem => item.Title)
-            </h3>
-            <h4>
-                Category: @Html.DisplayFor(modelItem => item.Category.Name)
-            </h4>
-            <h4>
+        <div class="col-md-3 summary">
+            <h2 style="text-align: center">
+                @Html.DisplayFor(modelItem => item.Title)  
+                @*@if (item.WouldRecommend)
+                {
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                }
+                else
+                {
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                }*@
+            </h2>
+
+            <h5 style="font: italic; text-align: center">
+                @Html.DisplayFor(modelItem => item.Category.Name)
+            </h5>
+            <h5 style="text-align: center">
                 Written by: @Html.DisplayFor(modelItem => item.ReviewerName)
-            </h4>
-            <h3>
-                @Html.DisplayFor(modelItem => item.WouldRecommend)
-            </h3>
-            <p>
+            </h5>
+            <h1 style="text-align: center">
+                @if (item.WouldRecommend)
+                {
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                }
+                else
+                {
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                }
+            </h1>
+            <p style="text-align: center; font-size: small">
                 @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }) |
                 @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID })
