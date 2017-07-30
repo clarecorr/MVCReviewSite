@@ -29,11 +29,15 @@ textarea {
 /*Styling for reviews on review index*/
 .summary {
     border: 2px solid black;
-    margin: 2px;
+    margin: 0px auto;
     background-color: white;
+    padding: 0px;
+    opacity: .75;
 }
 
 .glyphicon {
     font-size:50px;
     text-align: center;
 }
+
+

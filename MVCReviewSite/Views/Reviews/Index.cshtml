@@ -13,17 +13,9 @@
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="col-md-3 summary">
+        <div class="col-md-3 summary" id="reviews">
             <h2 style="text-align: center">
                 @Html.DisplayFor(modelItem => item.Title)  
-                @*@if (item.WouldRecommend)
-                {
-                    <span class="glyphicon glyphicon-thumbs-up"></span>
-                }
-                else
-                {
-                    <span class="glyphicon glyphicon-thumbs-down"></span>
-                }*@
             </h2>
 
             <h5 style="font: italic; text-align: center">
