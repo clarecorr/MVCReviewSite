@@ -9,23 +9,16 @@
 <div>
     <h4>Written by: @Html.DisplayFor(model => model.ReviewerName)</h4>
     <h4>Date: @Html.DisplayFor(model => model.Date)</h4>
-    <dt>
-        @Html.DisplayNameFor(model => model.WouldRecommend)
-    </dt>
-
-    <dd>
-        @Html.DisplayFor(model => model.WouldRecommend)
-    </dd>
 
     <div class="row">
-        <p style="color:white">
+        <p class="details">
             @Html.DisplayFor(model => model.Content)
         </p>
         
 
     </div>
 </div>
-<p>
+<p style="font: bold">
     @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

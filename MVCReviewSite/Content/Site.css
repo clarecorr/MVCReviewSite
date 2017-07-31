@@ -42,6 +42,7 @@ textarea {
     text-align: center;
 }
 
+/*Button styling*/
 a.btn.btn-primary {
     background-color: white;
     margin: 0px;
@@ -53,4 +54,12 @@ a.btn.btn-primary {
     font-weight: bold;
 }
 
-
+/*Review details styling*/
+.details {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    opacity: .75;
+    color: #514E4E;
+    border: 2px solid #514E4E;
+}

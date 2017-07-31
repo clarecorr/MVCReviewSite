@@ -10,6 +10,7 @@ namespace MVCReviewSite.Models
     {
         [Key] //Primary Key
         public int CategoryID { get; set; }
+        [Display(Name="Category Name")]
         public string Name { get; set; }
 
         public virtual ICollection<Review> Reviews { get; set; }

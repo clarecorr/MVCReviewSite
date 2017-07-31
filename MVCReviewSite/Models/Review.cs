@@ -11,11 +11,15 @@ namespace MVCReviewSite.Models
     {
         [Key] //Primary Key
         public int ReviewID { get; set; }
+        [Display(Name ="Subject of review")]
         public string Title { get; set; }
+        [Display(Name = "Your name")]
         public string ReviewerName { get; set; }
+        [Display(Name = "Review")]
         public string Content { get; set; }
         [DataType(DataType.Date)] 
         public DateTime Date { get; set; }
+        [Display(Name = "Was your experience positive?")]
         public bool WouldRecommend { get; set; }
 
         [ForeignKey("Category")]
