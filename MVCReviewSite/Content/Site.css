@@ -63,3 +63,9 @@ a.btn.btn-primary {
     color: #514E4E;
     border: 2px solid #514E4E;
 }
+
+/*Would you recommend checkbox on create/edit review pages*/
+.checkboxStyle {
+    margin-left: 20px;
+    width: 5px;
+}
